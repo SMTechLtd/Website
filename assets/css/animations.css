@@ -1,0 +1,72 @@
+/* =============================================
+   ANIMATIONS.CSS — Scroll Reveal + Transitions
+   SM Technical Consultancy
+   ============================================= */
+
+/* === SCROLL REVEAL === */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal.is-visible,
+.reveal-left.is-visible,
+.reveal-right.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger delay helpers (apply inline style="--delay: 0.1s" or use these) */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* === HOVER TRANSITIONS (referenced in components.css) === */
+/* Card lift is handled in components.css via transform: translateY(-3px) */
+
+/* === NAV TRANSITION === */
+.nav {
+  transition: box-shadow var(--transition-base), background-color var(--transition-base);
+}
+
+/* === BUTTON PULSE (on primary CTA hover) === */
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0   rgba(46, 139, 192, 0.4); }
+  70%  { box-shadow: 0 0 0 10px rgba(46, 139, 192, 0); }
+  100% { box-shadow: 0 0 0 0   rgba(46, 139, 192, 0); }
+}
+
+/* === REDUCED MOTION OVERRIDE (must be last) === */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

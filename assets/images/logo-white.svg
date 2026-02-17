@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="44" viewBox="0 0 220 44" fill="none" role="img" aria-label="SM Technical Consultancy">
+  <!-- Shield icon -->
+  <path d="M8 6L22 2L36 6V20C36 28 22 34 22 34C22 34 8 28 8 20V6Z" fill="none" stroke="#2E8BC0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M16 18L20 22L28 14" stroke="#2E8BC0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- SM Text -->
+  <text x="48" y="24" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">SM</text>
+  <!-- Divider -->
+  <rect x="78" y="10" width="1.5" height="24" fill="#2E4057"/>
+  <!-- Technical Consultancy text -->
+  <text x="88" y="19" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#FFFFFF" letter-spacing="0.5">TECHNICAL</text>
+  <text x="88" y="32" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="400" fill="#8A96A8" letter-spacing="0.5">CONSULTANCY</text>
+</svg>

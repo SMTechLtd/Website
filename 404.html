@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Page Not Found | SM Technical Consultancy</title>
+  <link rel="icon" type="image/png" href="/assets/images/logo-white.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/utilities.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: var(--color-navy);
+      color: var(--color-white);
+      padding: var(--space-8) var(--space-5);
+    }
+    .error-number {
+      font-size: 8rem;
+      font-weight: var(--font-weight-bold);
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: var(--space-4);
+      opacity: 0.9;
+    }
+    .error-title {
+      font-size: var(--font-size-2xl);
+      color: var(--color-white);
+      margin-bottom: var(--space-4);
+    }
+    .error-body {
+      font-size: var(--font-size-md);
+      color: rgba(255,255,255,0.7);
+      max-width: 500px;
+      margin: 0 auto var(--space-8);
+    }
+    .error-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: var(--space-4) var(--space-5);
+      display: flex;
+      align-items: center;
+      background-color: rgba(13, 27, 42, 0.95);
+      border-bottom: 1px solid var(--color-border);
+    }
+    @media (max-width: 480px) {
+      .error-number { font-size: 5rem; }
+      .error-title { font-size: var(--font-size-xl); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="error-nav" aria-label="Site navigation">
+    <a href="/" aria-label="SM Technical Consultancy — Home">
+      <img src="/assets/images/logo-white.png" alt="SM Technical Consultancy" width="180" height="36">
+    </a>
+  </nav>
+
+  <main id="main-content">
+    <div class="error-page">
+      <div aria-live="polite">
+        <p class="error-number" aria-label="Error 404">404</p>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-body">The page you're looking for doesn't exist or may have been moved. Let's get you back on track.</p>
+        <div class="hero__actions">
+          <a href="/" class="btn btn-primary btn--lg">Back to Home</a>
+          <a href="/services/" class="btn btn-secondary btn--lg">View Services</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/assets/js/nav.js" defer></script>
+</body>
+</html>
