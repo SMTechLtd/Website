@@ -5,15 +5,7 @@
       "rewrite": "/services/index.html"
     },
     {
-      "route": "/services/",
-      "rewrite": "/services/index.html"
-    },
-    {
       "route": "/insights",
-      "rewrite": "/insights/index.html"
-    },
-    {
-      "route": "/insights/",
       "rewrite": "/insights/index.html"
     },
     {
