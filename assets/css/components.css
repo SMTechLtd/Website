@@ -1022,6 +1022,34 @@
   margin: 0;
 }
 
+/* === COMPONENT: CERTIFICATE CARDS === */
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.cert-card__icon {
+  width: 40px;
+  height: 40px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.cert-card__title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-navy);
+  line-height: var(--line-height-tight);
+}
+
+.cert-card__body {
+  font-size: var(--font-size-sm);
+  color: #4A5568;
+  line-height: var(--line-height-body);
+  flex-grow: 1;
+}
+
 /* === COMPONENT: DIVIDER === */
 .divider {
   height: 1px;
